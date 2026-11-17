@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <header>
+        <div class="logo-icon">
+            <h1>Medicube X <span>Forever Cherry</span></h1>
+            <!-- <p>Hair Brush Product</p> -->
+        </div>
+        <ul>
+            <a href="./home.html"><li>Home</li></a>
+            <a href="./about.html"><li>About</li></a>
+            <a href="./product.html"><li>Product</li></a>
+            <a href="./contact.html"><li>Contact</li></a>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <div class="info">
+                <h3>Shine Enhancing</h3>
+                <p>Gentle Scalp Message Brush for Smooth Hair</p>
+                <div class="button-click">
+                    <button>Shop Now</button>
+                    <button class="learn-more" style="background-color: pink;">Learn More</button>
+                </div>
+                <p>Ribbon Cherry GlassHair Brush.</p>
+            </div>
+            <div class="main-img">
+                <!-- <img src="./img/image.png" alt="Image with background"> -->
+                <!-- <img src="./img/image copy.png" alt="Image with background"> -->
+                <img id="myImage" src="startpicture.jpg" alt="Image">
+                <script>
+                var images = ["https://i.pinimg.com/736x/25/db/b4/25dbb4ba15e4b07ae200bc360f3cd052.jpg", "https://i.pinimg.com/736x/91/81/0b/91810b41719775065be7d33e7fbe58bd.jpg", "https://i.pinimg.com/1200x/5a/d5/ae/5ad5ae8ecbf39fe8b40f5b31c9dfad1d.jpg"];
+                var index = 0;
+                function changeImage() {
+                    index = (index + 1) % images.length;
+                    document.getElementById("myImage").src = images[index];
+                }
+                // Change image every 3 seconds
+                setInterval(changeImage, 3000);
+                </script>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
