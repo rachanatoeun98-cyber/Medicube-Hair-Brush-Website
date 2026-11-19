@@ -24,3 +24,29 @@ There are 4 files: home.html, about.html, product.html and contact.html
                           </script>
   footer: - tag p
           - class contact
+
+
+  - about.html
+ body and footer are the same
+main :
+     - class container
+     - class info
+   
+  -product.html
+  body and footer are the same
+  section include class name: menu - (include 4 card class)
+  -contact.html
+  body and footer are the same
+  section use tag: h2, p, input and button.
+
+  # important
+   - How to change img?
+   - How to remove background from img?
+   - How to make background mix 2, 3color?
+   - How to do transition when hover?
+
+
+
+
+
+
